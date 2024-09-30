@@ -42,6 +42,13 @@
     margin-right: 5%;
 }
 
+@media (max-width: 816px) {
+    .highlights-container {
+        gap: 8px;
+    }
+
+}
+
 .social-media-container {
     display: flex;
     background-color: var(--item-color);

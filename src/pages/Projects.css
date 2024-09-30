@@ -22,3 +22,14 @@
 .project-platform {
     border-radius: 6px;
 }
+
+
+@media (max-width: 816px) {
+    .project-platform  {
+        scale: 80%;
+    }
+
+    .project-platform-container {
+        gap: 16px;
+    }
+}

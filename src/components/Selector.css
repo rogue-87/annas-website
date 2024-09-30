@@ -30,3 +30,20 @@
 .change-cursor-to-pointer {
     cursor: pointer;
 }
+
+@media (max-width: 816px) {
+    .selector-container {
+        scale: 75%;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .selector-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

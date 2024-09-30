@@ -27,3 +27,20 @@
     color: white;
     font-size: 16px;
 }
+
+@media (max-width: 816px) {
+    .project  {
+        scale: 90%;
+    }
+
+    .project-name {
+        font-size: 24px;
+    }
+    
+    .project-description {
+        text-align: center;
+        color: white;
+        font-size: 12px;
+    }
+    
+}
