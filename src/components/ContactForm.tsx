@@ -41,7 +41,7 @@ export default function ContactForm() {
             <input type="email" name="email" placeholder="Your Email" className="contact-form-email" required />
             <textarea name="message" placeholder="Your Message" className="contact-form-message" required />
             <input type="hidden" name="redirect" value="https://web3forms.com/success" />
-            <button type="submit" className="contact-form-submit-button">{isSubmiting ? <img src={loadingCircleGifPath} width={32} height={32} /> : "Submit" }</button>
+            <button disabled={isSubmiting} type="submit" className="contact-form-submit-button">{isSubmiting ? <img src={loadingCircleGifPath} width={32} height={32} /> : "Submit" }</button>
         </form>
     );
 }
