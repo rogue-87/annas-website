@@ -1,0 +1,74 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--item-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    width: 512px;
+    height: 512px;
+
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 24px;
+    gap: 24px;
+}
+
+.contact-form-name {
+    background-color: var(--item-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: white;
+    height: 32px;
+    font-size: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.contact-form-email {
+    background-color: var(--item-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: white;
+    height: 32px;
+    font-size: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.contact-form-message {
+    background-color: var(--item-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: white;
+    height: 100%;
+    font-size: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    resize: none;
+}
+
+.contact-form-submit-button {
+    background-color: var(--item-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: white;
+    width: 25%;
+    height: 64px;
+}
+
+.contact-form-submit-button:hover {
+    background-color: var(--item-hover-color);
+    cursor: pointer;
+}
+
+.contact-form-submit-button:active {
+    scale: 1.05;
+    cursor: pointer;
+}

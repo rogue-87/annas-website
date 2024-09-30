@@ -1,0 +1,29 @@
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--item-color);
+    border: 1px solid var(--border-color);
+    display: inline-block;
+    padding: 32px;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.project:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.project-name {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+}
+
+.project-description {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}

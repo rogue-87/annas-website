@@ -1,0 +1,24 @@
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 75%;
+}
+
+.project-text {
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.project-platform-container {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+
+.project-platform {
+    border-radius: 6px;
+}
