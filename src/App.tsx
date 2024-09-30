@@ -21,7 +21,7 @@ export default function App() {
                         <Route path="/blogs" element={<Blogs />} />
                         <Route path="/contact" element={<Contact />} />
                     
-                        <Route path="/blog1" element={<Blog title="Why I Think C# Is The Most Beautiful Programming Language" date="September 30, 2024" markdownContentPath="src/assets/blogs/blog1.md" />} />
+                        <Route path="/blog1" element={<Blog title="Why I Think C# Is The Most Beautiful Programming Language" date="September 30, 2024" markdownContentPath="../src/assets/blogs/blog1.md"  />} />
                     </Routes>
                 </MainArea>
             </HashRouter>
