@@ -1,3 +1,11 @@
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[data-autocompleted] {
+    background-color: transparent !important;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -16,7 +24,27 @@
 
 @media (max-width: 816px) {
     .contact-form {
-        scale: 80%;
+        width: 384px;
+        height: 384px;
+
+        padding-top: 16px;
+        padding-right: 16px;
+        padding-left: 16px;
+        padding-bottom: 16px;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 512px) {
+    .contact-form {
+        width: 300px;
+        height: 300px;
+
+        padding-top: 16px;
+        padding-right: 16px;
+        padding-left: 16px;
+        padding-bottom: 16px;
+        gap: 16px;
     }
 }
 
