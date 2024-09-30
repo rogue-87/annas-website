@@ -45,6 +45,12 @@
 }
 
 
+@media (max-width: 1561px) {
+    .blog-header {
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 816px) {
     .blog-header {
         flex-direction: column;
