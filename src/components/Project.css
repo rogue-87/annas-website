@@ -30,7 +30,7 @@
 
 @media (max-width: 816px) {
     .project  {
-        scale: 90%;
+        padding: 16px;
     }
 
     .project-name {

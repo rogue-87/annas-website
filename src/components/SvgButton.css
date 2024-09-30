@@ -8,6 +8,6 @@
     filter: invert(1);
 }
 
-.svg-button-svg:hover {
-    scale: 1.2;
+.svg-button:active {
+    scale: 1.01;
 }

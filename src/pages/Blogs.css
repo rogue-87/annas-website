@@ -7,3 +7,11 @@
     margin-bottom: 16px;
     gap: 16px;
 }
+
+
+@media (max-width: 816px) {
+    .blogs {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}

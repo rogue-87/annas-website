@@ -26,10 +26,17 @@
 
 @media (max-width: 816px) {
     .project-platform  {
-        scale: 80%;
+        scale: 90%;
     }
 
     .project-platform-container {
+        scale: 90%;
         gap: 16px;
+    }
+
+    .project-platform-container {
+        scale: 70%;
+        gap: 16px;
+
     }
 }

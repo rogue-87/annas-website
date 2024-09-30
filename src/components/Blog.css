@@ -46,15 +46,29 @@
 
 
 @media (max-width: 816px) {
+    .blog-header {
+        flex-direction: column;
+    }
+
     .blog {
-        scale: 90%;
+        font-size: 16px;
+
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 
     .blog-title {
-        font-size: 32px;
+        font-size: 28px;
     }
     
     .blog-date {
-        font-size: 24px;
+        font-size: 18px;
     }
 }
