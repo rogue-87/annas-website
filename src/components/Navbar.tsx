@@ -18,19 +18,19 @@ export default function Navbar() {
 
     return (
         <div className="navbar">
-            <Link to="/">
+            <Link className="selector-link" to="/">
                 <Selector text="Home" isSelected={selectedIndex == 0} onClick={() => onSelectorClicked(0)} />
             </Link>
 
-            <Link to="/projects">
+            <Link className="selector-link" to="/projects">
                 <Selector text="Projects" isSelected={selectedIndex == 1} onClick={() => onSelectorClicked(1)} />
             </Link>
 
-            <Link to="/blogs">
+            <Link className="selector-link" to="/blogs">
                 <Selector text="Blogs" isSelected={selectedIndex == 2} onClick={() => onSelectorClicked(2)} />
             </Link>
 
-            <Link to="/contact">
+            <Link className="selector-link" to="/contact">
                 <Selector text="Contact" isSelected={selectedIndex == 3} onClick={() => onSelectorClicked(3)} />
             </Link>
         </div>

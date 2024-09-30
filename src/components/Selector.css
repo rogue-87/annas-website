@@ -33,7 +33,6 @@
 
 @media (max-width: 816px) {
     .selector-container {
-        scale: 75%;
         padding-left: 32px;
         padding-right: 32px;
     }
