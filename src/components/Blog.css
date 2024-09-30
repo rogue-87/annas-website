@@ -26,7 +26,7 @@
 .blog-title {
     color: white;
     font-family: Lato;
-    font-size: 48px;
+    font-size: 32px;
     margin-top: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -39,6 +39,22 @@
 }
 
 .markdown-content {
+    font-size: 16px;
     font-family: Lato;
     color: white;
+}
+
+
+@media (max-width: 816px) {
+    .blog {
+        scale: 90%;
+    }
+
+    .blog-title {
+        font-size: 32px;
+    }
+    
+    .blog-date {
+        font-size: 24px;
+    }
 }

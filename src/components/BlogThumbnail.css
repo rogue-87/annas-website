@@ -31,3 +31,18 @@
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
+@media (max-width: 816px) {
+    .blog-thumbnail {
+        scale: 90%;
+    }
+
+
+    .blog-thumbnail-title {
+        font-size: 24px;
+    }
+    
+    .blog-thumbnail-date {
+        font-size: 16px;
+    }
+}

@@ -62,6 +62,13 @@
     align-items: center;
 }
 
+@media (max-width: 816px) {
+    .social-media-container {
+        gap: 32px;
+    }
+}
+
+
 .skills {
     display: flex;
     flex-wrap: wrap;
