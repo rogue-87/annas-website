@@ -1,10 +1,16 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
 import Selector from "./Selector";
 import "./Navbar.css"
 
 export default function Navbar() {
-    const [selectedIndex, setSelectedIndex] = useState(0);
+    const [selectedIndex, setSelectedIndex] = useState<number>(
+        () => Number(localStorage.getItem("selectedIndex")) || 0
+    );
+
+    useEffect(() => {
+        localStorage.setItem("selectedIndex", selectedIndex.toString());
+    }, [selectedIndex]);
 
     function onSelectorClicked(index: number) {
         setSelectedIndex(index);
