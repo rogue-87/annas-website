@@ -11,9 +11,9 @@ export default function Projects() {
         <h1 className="project-text">You can find all of my projects on</h1>
 
         <div className="project-platform-container">
-            <ImageButton imageStyle="project-platform" filePath={githubIconPath} width={128} height={128} onClick={() => window.open("https://github.com/annasajkh")} />
-            <ImageButton imageStyle="project-platform" filePath={itchIOIconPath} width={128} height={128} onClick={() => window.open("https://annasjk.itch.io")} />
-            <ImageButton imageStyle="project-platform" filePath={replitIconPath} width={128} height={128} onClick={() => window.open("https://replit.com/@AnnasVirtual")} />
+            <ImageButton imageStyle="project-platform" filePath={githubIconPath} width={96} height={96} onClick={() => window.open("https://github.com/annasajkh")} />
+            <ImageButton imageStyle="project-platform" filePath={itchIOIconPath} width={96} height={96} onClick={() => window.open("https://annasjk.itch.io")} />
+            <ImageButton imageStyle="project-platform" filePath={replitIconPath} width={96} height={96} onClick={() => window.open("https://replit.com/@AnnasVirtual")} />
         </div>
     </div>
   )
