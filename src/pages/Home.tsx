@@ -35,7 +35,7 @@ export default function Home() {
                     <Skill filePath={javaImgPath} skillName="Java" onClick={() => window.open("https://github.com/annasajkh?tab=repositories&q=&type=&language=java&sort=")}/>
                     <Skill filePath={pythonImgPath} skillName="Python" onClick={() => window.open("https://github.com/annasajkh?tab=repositories&q=&type=&language=python&sort=")}/>
                     <Skill filePath={reactImgPath} skillName="React" onClick={() => window.open("https://github.com/annasajkh?tab=repositories&q=topic%3Areact&type=&language=&sort=")}/>
-                    <Skill filePath={typescriptImgPath} skillName="Typescript" onClick={() => window.open("https://github.com/annasajkh?tab=repositories&q=topic%3Areact&type=&language=typescript&sort=")}/>
+                    <Skill filePath={typescriptImgPath} skillName="Typescript" onClick={() => window.open("https://github.com/annasajkh?tab=repositories&q=&type=&language=typescript&sort=")}/>
                     <Skill filePath={libgdxImgPath} skillName="LibGDX" onClick={() => window.open("https://github.com/annasajkh?tab=repositories&q=topic%3Alibgdx&type=&language=&sort=")}/>
                 </div>
 			</div>
