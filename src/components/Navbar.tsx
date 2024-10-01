@@ -6,6 +6,10 @@ export default function Navbar() {
     const location = useLocation()
 
     const getSelectedIndex = () => {
+        if (location.pathname.toLowerCase().includes("blog")) {
+            return 2;
+        }
+
         switch (location.pathname.toLowerCase()) {
             case "/":
                 return 0;
