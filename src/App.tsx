@@ -17,6 +17,7 @@ export default function App() {
                 <MainArea>
                     <Routes>
                         <Route path="/" element={<Home />} />
+                        <Route path="/home" element={<Home />} />
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/blogs" element={<Blogs />} />
                         <Route path="/contact" element={<Contact />} />

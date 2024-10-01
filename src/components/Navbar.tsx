@@ -1,38 +1,44 @@
-import { useEffect, useState } from "react"
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Selector from "./Selector";
-import "./Navbar.css"
+import "./Navbar.css";
 
 export default function Navbar() {
-    const [selectedIndex, setSelectedIndex] = useState<number>(
-        () => Number(localStorage.getItem("selectedIndex")) || 0
-    );
+    const location = useLocation()
 
-    useEffect(() => {
-        localStorage.setItem("selectedIndex", selectedIndex.toString());
-    }, [selectedIndex]);
+    const getSelectedIndex = () => {
+        switch (location.pathname.toLowerCase()) {
+            case "/":
+                return 0;
+            case "/projects":
+                return 1;
+            case "/blogs":
+                return 2;
+            case "/contact":
+                return 3;
+            default:
+                return 0;
+        }
+    };
 
-    function onSelectorClicked(index: number) {
-        setSelectedIndex(index);
-    }
+    const selectedIndex = getSelectedIndex();
 
     return (
         <div className="navbar">
             <Link className="selector-link" to="/">
-                <Selector text="Home" isSelected={selectedIndex == 0} onClick={() => onSelectorClicked(0)} />
+                <Selector text="Home" isSelected={selectedIndex === 0} />
             </Link>
 
             <Link className="selector-link" to="/projects">
-                <Selector text="Projects" isSelected={selectedIndex == 1} onClick={() => onSelectorClicked(1)} />
+                <Selector text="Projects" isSelected={selectedIndex === 1} />
             </Link>
 
             <Link className="selector-link" to="/blogs">
-                <Selector text="Blogs" isSelected={selectedIndex == 2} onClick={() => onSelectorClicked(2)} />
+                <Selector text="Blogs" isSelected={selectedIndex === 2} />
             </Link>
 
             <Link className="selector-link" to="/contact">
-                <Selector text="Contact" isSelected={selectedIndex == 3} onClick={() => onSelectorClicked(3)} />
+                <Selector text="Contact" isSelected={selectedIndex === 3} />
             </Link>
         </div>
-    )
+    );
 }
