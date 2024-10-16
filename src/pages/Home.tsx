@@ -22,10 +22,10 @@ import libgdxImgPath from "../assets/skills/libgdx.png"
 export default function Home() {
 	return (
 		<div className="home">
-			<div className="profile-container">
+			{/* <div className="profile-container"> */}
 				<Profile />
-			</div>
-            
+			{/* </div> */}
+
             <h1 className="header-text center-text">Skills</h1>
 
 			<div className="skills-container">
@@ -39,22 +39,22 @@ export default function Home() {
                     <Skill filePath={libgdxImgPath} skillName="LibGDX" onClick={() => window.open("https://github.com/annasajkh?tab=repositories&q=topic%3Alibgdx&type=&language=&sort=")}/>
                 </div>
 			</div>
-            
+
             <h1 className="header-text begining-text">Highlights</h1>
 
             <div className="highlights-container">
                 <Project className="highlight-1" name="Annas Engine" description="Game engine i made for learning OpenTK (C# binding of OpenGL)" onClick={() => window.open("https://github.com/annasajkh/AnnasEngine")}/>
                 <Project className="highlight-2" name="World Tweaker" description="Oneshot mod manager that i made in like 2 weeks for testing electron" onClick={() => window.open("https://github.com/annasajkh/world-tweeker")} />
-                
+
                 <Project className="highlight-3" name="Minecraft 2D" description="A Terraria + Minecraft like game written in libgdx" onClick={() => window.open("https://github.com/annasajkh/Minecraft2D")} />
                 <Project className="highlight-4" name="Annas Bot" description="A bot for my discord server written in python" onClick={() => window.open("https://github.com/annasajkh/AnnasBot")} />
-                
+
                 <Project className="highlight-5" name="Si Merah" description="My first finished game in godot" onClick={() => window.open("https://github.com/annasajkh/Si-Merah")} />
                 <Project className="highlight-6" name="Zombie Shoot" description="Me trying to use c to make game with oop it's so much pain" onClick={() => window.open("https://github.com/annasajkh/ZombieShoot")} />
-                
+
                 <Project className="highlight-7" name="Frosty" description="A game to test the Foster framework" onClick={() => window.open("https://github.com/annasajkh/Frosty")} />
                 <Project className="highlight-8" name="OneInfection " description="An idea comes into my head when godot 4 have sub window support and when godot 4 seems stable enough to use" onClick={() => window.open("https://github.com/annasajkh/OneInfection")} />
-                
+
                 <Project className="highlight-9" name="Very Simple Neural Network Library" description="A simple Neural Network Library written in java" onClick={() => window.open("https://github.com/annasajkh/Very-Simple-Neural-Network-Library")} />
                 <Project className="highlight-10" name="Simple GPT" description="A simple gpt implementation" onClick={() => window.open("https://github.com/annasajkh/SimpleGPT")} />
 
