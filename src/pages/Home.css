@@ -1,16 +1,5 @@
-/* .home {} */
-
-/* .profile-container { */
-/*     display: flex; */
-/*     justify-content: center; */
-/*     align-items: center; */
-/*     height: 512px; */
-/* } */
-
 .header-text {
-    color: white;
-    font-size: 32px;
-    display: flex;
+  text-align: center;
 }
 
 .center-text {
@@ -26,26 +15,20 @@
     padding-bottom: 128px;
 }
 
-.begining-text {
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
 .highlights-container {
     display: grid;
     grid-template-rows: repeat(14, auto);
     grid-template-columns: repeat(7, auto);
     gap: 16px;
     justify-content: center;
-    padding: 5rem;
+    padding: 0 80px;
 }
 
 @media (max-width: 816px) {
     .highlights-container {
         gap: 8px;
-        padding: 1.3rem;
+        padding: 0 24px;
     }
-
 }
 
 .social-media-container {
