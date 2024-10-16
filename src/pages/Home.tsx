@@ -3,13 +3,13 @@ import "./Home.css"
 import Profile from "../components/Profile";
 import Project from "../components/Project";
 import ImageButton from "../components/ImageButton";
+import Skill from "../components/Skill";
 
 import twitterXImgPath from "../assets/social_media/twitter_x.jpg";
 import youtubeImgPath from "../assets/social_media/youtube.png";
 import instagramImgPath from "../assets/social_media/instagram.jpg";
 import discordImgPath from "../assets/social_media/discord.jpg";
 import linktreeImgPath from "../assets/social_media/linktree.png";
-import Skill from "../components/Skill";
 
 import csharpImgPath from "../assets/skills/csharp.png"
 import godotImgPath from "../assets/skills/godot.png"
@@ -22,9 +22,7 @@ import libgdxImgPath from "../assets/skills/libgdx.png"
 export default function Home() {
 	return (
 		<div className="home">
-			{/* <div className="profile-container"> */}
 				<Profile />
-			{/* </div> */}
 
             <h1 className="header-text center-text">Skills</h1>
 
@@ -40,7 +38,7 @@ export default function Home() {
                 </div>
 			</div>
 
-            <h1 className="header-text begining-text">Highlights</h1>
+            <h1 className="header-text beginning-text">Highlights</h1>
 
             <div className="highlights-container">
                 <Project className="highlight-1" name="Annas Engine" description="Game engine i made for learning OpenTK (C# binding of OpenGL)" onClick={() => window.open("https://github.com/annasajkh/AnnasEngine")}/>
