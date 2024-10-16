@@ -1,13 +1,11 @@
-.home {
+/* .home {} */
 
-}
-
-.profile-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 512px;
-}
+/* .profile-container { */
+/*     display: flex; */
+/*     justify-content: center; */
+/*     align-items: center; */
+/*     height: 512px; */
+/* } */
 
 .header-text {
     color: white;
@@ -38,13 +36,14 @@
     grid-template-rows: repeat(14, auto);
     grid-template-columns: repeat(7, auto);
     gap: 16px;
-    margin-left: 5%;
-    margin-right: 5%;
+    justify-content: center;
+    padding: 5rem;
 }
 
 @media (max-width: 816px) {
     .highlights-container {
         gap: 8px;
+        padding: 1.3rem;
     }
 
 }
